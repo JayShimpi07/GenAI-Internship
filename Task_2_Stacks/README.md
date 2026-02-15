@@ -1,4 +1,3 @@
-```markdown
 # Understanding Stacks in Python with Real-World Examples
 
 A practical guide to implementing stacks in Python with real-world applications and time complexity analysis.
@@ -13,16 +12,14 @@ A **Stack** is a linear data structure that follows the principle of:
 
 This means the last element inserted into the stack is the first one to be removed.
 
-Example visualization:
+### Example Visualization
 
 ```
-
 Top
 |  30
 |  20
 |  10
-
-````
+```
 
 If we remove an element, 30 will be removed first.
 
@@ -41,20 +38,23 @@ If we remove an element, 30 will be removed first.
 
 ### Method 1: Using List
 
-````python
+```python
 stack = []
 
+# Push elements
 stack.append(10)
 stack.append(20)
 stack.append(30)
 
 print("Stack after push:", stack)
 
+# Pop element
 stack.pop()
 print("Stack after pop:", stack)
 
+# Peek element
 print("Top element:", stack[-1])
-````
+```
 
 ---
 
@@ -138,7 +138,7 @@ print(is_balanced("(()"))
 ## Time Complexity
 
 | Operation | Time Complexity |
-| --------- | --------------- |
+|-----------|-----------------|
 | Push      | O(1)            |
 | Pop       | O(1)            |
 | Peek      | O(1)            |
@@ -147,10 +147,7 @@ print(is_balanced("(()"))
 ---
 
 ## Conclusion
-````
 
 Stacks are foundational to many real-world systems such as undo mechanisms, browser navigation, and expression evaluation.
 
 Understanding stacks strengthens your core data structure knowledge and builds a strong base for advanced algorithms.
-
-````
